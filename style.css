@@ -24,9 +24,16 @@ header{
 main{
     flex: 1;
 }
+footer{
+    min-height: 24vh;
+}
 a{
     text-decoration: none;
     color: white;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
 }
 .homeInfo{
     display: flex;
@@ -61,26 +68,26 @@ a{
     padding-left: 7rem;
     font-size: 1.3rem;
 }
-.musicInfo{
+.contentInfo{
     min-height: 100vh;
     background-color: orangered;
 }
-.musicInteraction{
+.contentInteraction{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.musicPhoto{
-    display: flex;
-    justify-content: right;
-}
-.musicButtons{
+.contentButtons{
     display: flex;
     gap: 4rem;
     justify-content: center;
     align-items: center ;
     flex-direction: column;
     padding-left: 7rem;
+}
+.musicPhoto{
+    display: flex;
+    justify-content: right;
 }
 .musicButton{
     height: 100px;
@@ -95,10 +102,6 @@ a{
     color: white;
     transition: transform 0.5s ease;
 }
-.musicButton:hover{
-    cursor: pointer;
-    transform: scale(0.9);
-}
 .aboutInfo{
     min-height: 100vh;
 }
@@ -111,6 +114,48 @@ a{
     text-align: center;
     font-family: "Kenia";
     font-size: 3rem;
+}
+.storePhoto{
+    display: flex;
+    justify-content: right;
+    width: 800px;
+    height: 670px;
+}
+.storeButton{
+    height: 100px;
+    width: 360px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    border: 0.2px solid black;
+    border-radius: 60px;
+    transition: transform 0.5s ease;
+}
+.storeButton:first-child{
+    background-color: black;
+    color: white;
+}
+.footerInfo{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.5 ease;
+}
+.footerContent span:first-child{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: white;
+}
+.footerContent span:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 @keyframes companyNamePulse {
     0%   { opacity: 1; }
